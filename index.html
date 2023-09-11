@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Vodoo</title>
+</head>
+<body class="bg-[#FCF7E6] w-[1440px] font-['Space_Grotesk']">
+<header class="flex items-start self-start justify-between mt-[48px] mb-[48px] ml-[62px] mr-[120px]">
+    <img src="icons/logo.svg" width="192" height="97"/>
+    <div class="flex">
+        <img src="icons/cart.svg" id="open-cart-modal" class="mr-[48px] cursor-pointer	" width="24" height="24"/>
+        <button class="w-[100px] bg-black text-white h-[40px]">Sign-up</button>
+    </div>
+</header>
+<hr class="border-b-[-0.5px] border-black"/>
+<main class="mt-[50px]">
+    <div class="info-block">
+        <div class="flex items-start justify-between mr-[120px] ml-[120px] w-[1200px] p-[15px] bg-black text-[#FCF7E6] cursor-pointer" id="clickable-block">
+            <div class="flex">
+                <img src="icons/circle.svg"/>
+                <p class="text-[14px] ml-[6px] mr-[48px]">ALPHA</p>
+                <p class="text-[#FCF7E6] text-[12px]">Important info regarding our service</p>
+            </div>
+            <div>
+                <img src="icons/chevron-down.svg" id="chevron-icon" width="24"/>
+            </div>
+        </div>
+        <div class="info-content hidden p-4 max-h-[500px] overflow-y-auto bg-black text-[#FCF7E6] w-[1200px] pt-[30px] pb-[30px] m-auto">
+            <p>This is the additional information you want to display.</p>
+        </div>
+    </div>
+
+    <div id="product-list" class="w-[1200px] mt-[48px] mx-auto grid grid-cols-4 gap-4">
+    </div>
+
+    <div class="pagination flex items-center justify-center space-x-4 mt-4">
+
+        <div id="pagination-pages" class="pagination-pages flex space-x-2">
+        </div>
+    </div>
+   <footer class="mt-[200px]">
+       <div class="bg-white w-[1440px]">
+            <div class="w-[1200px] m-auto pt-[85px] pb-[85px] flex justify-between text-[14px]">
+                <div>
+                    <img src="icons/Logomark.svg" class="w-[70px] h-[70px]"/>
+                </div>
+                <div>
+                    <p>FAQ</p>
+                    <p>RETURNS</p>
+                    <p>CONTACT</p>
+                </div>
+                <div>
+                    <p>TERMS & CONDITIONS</p>
+                    <p>PRIVACY POLICY</p>
+                    <p>COOKIE POLICY</p>
+                    <p>COOKIE SETTINGS</p>
+                </div>
+                <div>
+                    <p>ABOUT SECOND CHANCE</p>
+                    <p>CAREER</p>
+                    <p>FACEBOOK</p>
+                    <p>INSTAGRAM</p>
+                </div>
+            </div>
+       </div>
+   </footer>
+
+    <div id="cart-modal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+        <div class="modal-container text-[#FCF7E6] w-[450px] rounded-lg p-4 bg-[#1E1E1E] overflow-y-auto max-h-[80vh]">
+            <div class="modal-header flex justify-between">
+                <h2 class="text-xl font-semibold ml-8">Shopping Cart</h2>
+                <button id="close-cart-modal" class="text-[#FCF7E6]-500 mr-8 hover:text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-content flex flex-col">
+                <div class="flex items-center justify-center">
+                    <hr class="bg-[#FCF7E6] mt-[22px] w-[355px]" />
+                </div>
+                <div id="block-cart"></div>
+                <div class="w-[355px] m-auto">
+                    <div class="flex items-center justify-center">
+                        <hr class="bg-[#FCF7E6] mt-[22px] w-[355px]" />
+                    </div>
+                    <div class="text-[#FCF7E6] flex justify-between mt-[40px] mb-[20px]">
+                        <p>TOTAL</p>
+                        <p id="totalPrice">0 KR.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>

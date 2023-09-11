@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.pagination-button {
+    width: 35px;
+    height: 35px;
+    border: 1px black solid;
+    border-radius: 50%;
+}
+.active-button {
+    color: white;
+    background-color: black;
+}
+
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 16px;*/
+/*    flex-direction: column;*/
+/*    text-align: center;*/
+/*}*/
+
+/*header img {*/
+/*    margin-bottom: 16px;*/
+/*}*/
+
+header .flex {
+    margin-top: 16px;
+}
+
+header button {
+    width: 100%;
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 24px;
+    }
+}
+
+@media (min-width: 1280px) {
+    body {
+        font-size: 20px;
+        background-color: #FCF7E6;
+    }
+
+    header {
+        /*margin-top: 48px;*/
+        /*margin-bottom: 48px;*/
+        /*padding: 32px;*/
+    }
+}
+
+#product-list {
+    max-width: 100%;
+    padding-top: 48px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+}
+
+
+
+@media (min-width: 1280px) {
+    #product-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+#chevron-icon {
+    transition: transform 0.3s ease;
+}
+
+#clickable-block.info-expanded #chevron-icon {
+    transform: rotate(180deg);
+}
