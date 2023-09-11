@@ -45,6 +45,11 @@ header button {
     body {
         font-size: 16px;
     }
+    .info-block{
+        width: 600px;
+        margin: 0 auto;
+
+    }
 
     header {
         flex-direction: row;
@@ -52,9 +57,21 @@ header button {
     }
 }
 
+@media screen and (min-width: 767px) {
+    #product-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 @media (min-width: 1024px) and (max-width: 1279px) {
     body {
         font-size: 18px;
+    }
+    .info-block{
+        width: 900px;
+        margin: 0 auto;
+
     }
 
     header {
@@ -80,7 +97,7 @@ header button {
     padding-top: 48px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
 }
 
@@ -99,3 +116,5 @@ header button {
 #clickable-block.info-expanded #chevron-icon {
     transform: rotate(180deg);
 }
+
+
