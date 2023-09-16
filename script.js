@@ -116,7 +116,7 @@ function renderProduct(product) {
     productElement.classList.add('product');
     productElement.innerHTML =
         `<img class="w-[280px] h-[280px] border-[1px] border-black" src="${img}"/>
-        <div class="mt-[15px] flex justify-between font-bold">
+        <div class="mt-[15px] flex justify-between max-w-[280px] font-bold">
             <div>
                 <p>${product.title}</p>
                 <p>${product.variants[0].price} KR</p>

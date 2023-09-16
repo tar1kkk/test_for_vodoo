@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Vodoo</title>
 </head>
-<body class="bg-[#FCF7E6] max-w-full font-['Space_Grotesk']">
+<body class="bg-[#FCF7E6]  font-['Space_Grotesk']">
 <header class="flex items-start self-start justify-between mt-[48px] mb-[48px] ml-[62px] mr-[120px]">
     <img src="icons/logo.svg" width="192" height="97"/>
     <div class="flex">
@@ -14,10 +14,10 @@
         <button class="w-[100px] bg-black text-white h-[40px]">Sign-up</button>
     </div>
 </header>
-<hr class="border-b-[-0.5px] border-black"/>
+<hr class="border-b-[-0.5px] border-black max-w-full"/>
 <main class="mt-[50px]">
     <div class="info-block">
-        <div class="flex items-start justify-between mr-[120px] ml-[120px] p-[15px] bg-black text-[#FCF7E6] cursor-pointer" id="clickable-block">
+        <div class="flex items-start justify-between max-w-[1200px] m-auto p-[15px] bg-black text-[#FCF7E6] cursor-pointer" id="clickable-block">
             <div class="flex">
                 <img src="icons/circle.svg"/>
                 <p class="text-[14px] ml-[6px] mr-[48px]">ALPHA</p>
@@ -27,12 +27,12 @@
                 <img src="icons/chevron-down.svg" id="chevron-icon" width="24"/>
             </div>
         </div>
-        <div class="info-content hidden p-4 max-h-[500px] overflow-y-auto bg-black text-[#FCF7E6] w-[1200px] pt-[30px] pb-[30px] m-auto">
+        <div class="info-content hidden p-4 max-h-[500px] overflow-y-auto bg-black text-[#FCF7E6] max-w-[1200px] pt-[30px] pb-[30px] m-auto">
             <p>This is the additional information you want to display.</p>
         </div>
     </div>
 
-    <div id="product-list" class="w-[1200px] mt-[48px] mx-auto grid grid-cols-4 gap-4">
+    <div id="product-list" class="max-w-[1200px] mt-[48px] mx-auto grid grid-cols-4">
     </div>
 
     <div class="pagination flex items-center justify-center space-x-4 mt-4">
@@ -42,7 +42,7 @@
     </div>
    <footer class="mt-[200px]">
        <div class="bg-white max-w-full">
-            <div class="w-[1200px] m-auto pt-[85px] pb-[85px] flex justify-between text-[14px]">
+            <div class="max-w-[1200px] m-auto pt-[85px] pb-[85px] flex justify-between text-[14px]">
                 <div>
                     <img src="icons/Logomark.svg" class="w-[70px] h-[70px]"/>
                 </div>
